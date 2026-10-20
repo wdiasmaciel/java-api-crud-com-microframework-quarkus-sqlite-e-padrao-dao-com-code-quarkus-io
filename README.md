@@ -1,5 +1,7 @@
 # java-api-crud-com-microframework-quarkus-sqlite-e-padrao-dao-com-code-quarkus-io
 
+--- 
+
 ## API CRUD com Quarkus, SQLite e Padrão DAO
 
 Objetivo: demonstrar a construção de uma API REST, utilizando o ecossistema **Quarkus**.
@@ -19,6 +21,8 @@ Criar uma `API REST` com suporte a operações CRUD (CREATE, READ, UPDATE, DELET
 6. O comando (Command Line Interface, CLI) para teste de APIs `curl` e
 
 7. A extensão para visualização de dados no banco de dados `SQLite Viewer`.
+
+---
 
 ## Arquitetura do projeto:
 
@@ -46,11 +50,14 @@ Criar uma `API REST` com suporte a operações CRUD (CREATE, READ, UPDATE, DELET
                 └── application.properties
 ```
 
+---
+
 ## code.quarkus.io
 
 https://code.quarkus.io/
 
 
+---
 
 ## Variável de Ambiente
 
