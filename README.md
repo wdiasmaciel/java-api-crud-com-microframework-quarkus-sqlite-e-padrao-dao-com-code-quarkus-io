@@ -68,7 +68,13 @@ https://code.quarkus.io/
 
 3. No campo de busca por extensões, pesquise e selecione as duas opções abaixo:
    * `Quarkus REST Jackson` (Para criar os controladores Web e processar JSON).
+   ```text
+   Quarkus REST Jackson
+   ```
    * `JDBC Driver - SQLite` (Para comunicação com o banco de dados).
+   ```text
+   JDBC Driver - SQLite
+   ```
 
 4. No canto superior direito, clique no botão **Generate your application**.
 
