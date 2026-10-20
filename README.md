@@ -579,6 +579,17 @@ GET {{baseUrl}}/usuarios
 Accept: {{contentType}}
 ```
 
+## Testar a Aplicação
+
+1. Abra o arquivo `testes.http` presente na raiz do projeto.
+
+2. Certifique-se de que a extensão **REST Client** está ativa.
+
+3. Clique na linha escrita `Send Request` que aparece logo acima das requisições HTTP para ver as respostas JSON no painel lateral.
+
+4. Para inspecionar visualmente os dados salvos no banco de dados, clique com o botão direito sobre o arquivo criado em `data/usuarios.db` e selecione **Open with SQLite Viewer**.
+
+
 # Executar no GitHub Codespaces
 
 O ambiente do `GitHub Codespaces` já oferece suporte nativo ao ecossistema Java (JDK) e ferramentas de build como o Apache Maven. 
