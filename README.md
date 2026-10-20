@@ -72,7 +72,7 @@ https://code.quarkus.io/
 
 4. No canto superior direito, clique no botão **Generate your application**.
 
-5. No menu flutuante que abrir, selecione a opção **Push to GitHub** (isso vinculará sua conta e criará automaticamente um repositório novo para o projeto diretamente no seu perfil do GitHub).
+5. No menu flutuante que abrir, selecione a opção **Push to GitHub** (isso vinculará sua conta e criará automaticamente um novo repositório para o projeto diretamente no seu perfil do GitHub).
 
 ---
 
