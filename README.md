@@ -72,7 +72,7 @@ https://code.quarkus.io/
    ```text
    Quarkus REST Jackson
    ```
-   
+
    * `JDBC Driver - SQLite` (Para comunicação com o banco de dados).
    ```text
    JDBC Driver - SQLite
@@ -81,6 +81,32 @@ https://code.quarkus.io/
 4. No canto superior direito, clique no botão **Generate your application**.
 
 5. No menu flutuante que abrir, selecione a opção **Push to GitHub** (isso vinculará sua conta e criará automaticamente um novo repositório para o projeto diretamente no seu perfil do GitHub).
+
+---
+
+## Executando o Projeto no GitHub Codespaces
+
+1. Abra o repositório que foi gerado no seu GitHub.
+
+2. Clique no botão verde **Code**, mude para a aba **Codespaces** e selecione **Create codespace on main**.
+
+3. Assim que o terminal carregar, crie a pasta do banco de dados e configure o arquivo de ambiente `.env` executando:
+
+   ```bash
+   mkdir -p data
+   ```
+
+   ```bash
+   echo "DB_PATH=data/usuarios.db" > .env
+   ```
+
+4. Inicie o servidor em modo de desenvolvimento com o comando abaixo:
+
+   ```bash
+   mvn quarkus:dev
+   ```
+
+   *O servidor iniciará automaticamente na porta **8080**. A porta será configurada posteriormente no arquivo `application.properties`.*
 
 ---
 
