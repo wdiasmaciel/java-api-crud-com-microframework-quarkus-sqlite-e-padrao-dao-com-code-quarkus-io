@@ -68,8 +68,8 @@ https://code.quarkus.io/
 
 3. No campo de busca por extensões, pesquise e selecione as duas opções abaixo:
 
-   * `Quarkus REST Jackson` (Para criar os controladores Web e processar JSON).
-   
+   * `Quarkus REST Jackson` (Para criar os controladores Web e processar JSON). <br/>
+
    ```text
    Quarkus REST Jackson
    ```
