@@ -46,6 +46,12 @@ Criar uma `API REST` com suporte a operações CRUD (CREATE, READ, UPDATE, DELET
                 └── application.properties
 ```
 
+## code.quarkus.io
+
+https://code.quarkus.io/
+
+
+
 ## Variável de Ambiente
 
 O `Quarkus` lê variáveis de ambiente diretamente de um arquivo `.env` localizado na raiz do projeto. 
