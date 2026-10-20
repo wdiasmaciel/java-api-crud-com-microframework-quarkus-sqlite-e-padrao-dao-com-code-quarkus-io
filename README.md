@@ -54,10 +54,25 @@ Criar uma `API REST` com suporte a operações CRUD (CREATE, READ, UPDATE, DELET
 
 ---
 
-## code.quarkus.io
+## Gerando o Projeto no Code.Quarkus.io
 
 https://code.quarkus.io/
 
+
+1. Acesse o site [https://code.quarkus.io/](https://code.quarkus.io/).
+
+2. No painel de metadados à direita, configure os seguintes campos:
+   * **Group**: `com.empresa`
+   * **Artifact**: `app`
+   * **Build Tool**: `Maven`
+
+3. No campo de busca por extensões, pesquise e selecione as duas opções abaixo:
+   * `Quarkus REST Jackson` (Para criar os controladores Web e processar JSON).
+   * `JDBC Driver - SQLite` (Para comunicação com o banco de dados).
+
+4. No canto superior direito, clique no botão **Generate your application**.
+
+5. No menu flutuante que abrir, selecione a opção **Push to GitHub** (isso vinculará sua conta e criará automaticamente um repositório limpo diretamente no seu perfil do GitHub).
 
 ---
 
