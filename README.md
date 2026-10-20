@@ -2,17 +2,6 @@
 
 Este projeto foi estruturado para ensinar os fundamentos de APIs RESTful, usando a infraestrutura do microframework **Quarkus**, persistindo dados em um banco **SQLite** local e rodando no **GitHub Codespaces**.
 
----
-
-## Extensões Necessárias no VS Code do Codespaces
-Antes de iniciar, certifique-se de instalar as seguintes extensões no seu ambiente:
-
-1. **REST Client** (para executar testes de API: arquivo de testes da API `testes.http`).
-
-2. **SQLite Viewer** (para abrir e inspecionar visualmente as tabelas dentro do arquivo `.db` gerado).
-
----
-
 --- 
 
 ## API CRUD com Quarkus, SQLite e Padrão DAO
@@ -63,7 +52,6 @@ Criar uma `API REST` com suporte a operações CRUD (CREATE, READ, UPDATE, DELET
             └── META-INF/
                 └── application.properties
 ```
-
 ---
 
 ## Gerando o Projeto no Code.Quarkus.io
@@ -129,10 +117,21 @@ O `Quarkus` lê variáveis de ambiente diretamente de um arquivo `.env` localiza
 Crie o arquivo `.env` com o conteúdo abaixo na raiz do projeto:
 
 ```properties
-DB_PATH=./data/usuarios.db
+DB_PATH=./data/usuario.db
 ```
 
 Crie a pasta `data`, para armazenar o arquivo do banco de dados `SQLite`.
+
+---
+
+## Extensões Necessárias no VS Code do Codespaces
+Antes de iniciar, certifique-se de instalar as seguintes extensões no seu ambiente:
+
+1. **REST Client** (para executar testes de API: arquivo de testes da API `testes.http`).
+
+2. **SQLite Viewer** (para abrir e inspecionar visualmente as tabelas dentro do arquivo `.db` gerado).
+
+---
 
 # Arquivo de Configuração de Dependências (pom.xml)
 
