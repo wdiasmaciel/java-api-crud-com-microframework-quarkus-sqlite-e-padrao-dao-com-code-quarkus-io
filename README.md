@@ -1,5 +1,7 @@
 # java-api-crud-com-microframework-quarkus-sqlite-e-padrao-dao-com-code-quarkus-io
 
+Este projeto foi estruturado para ensinar os fundamentos de APIs RESTful, usando a infraestrutura do microframework **Quarkus**, persistindo dados em um banco **SQLite** local e rodando no **GitHub Codespaces**.
+
 --- 
 
 ## API CRUD com Quarkus, SQLite e Padrão DAO
