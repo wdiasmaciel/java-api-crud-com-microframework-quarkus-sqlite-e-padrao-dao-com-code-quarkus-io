@@ -55,7 +55,7 @@ Criar uma `API REST` com suporte a operações CRUD (CREATE, READ, UPDATE, DELET
 ```
 ---
 
-## Gerando o Projeto no Code.Quarkus.io
+## Quarkus
 
 https://quarkus.io/
 
