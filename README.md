@@ -50,8 +50,7 @@ Criar uma `API REST` com suporte a operações CRUD (CREATE, READ, UPDATE, DELET
         │           └── resource/
         │               └── UsuarioResource.java (Controller)
         └── resources/
-            └── META-INF/
-                └── application.properties
+            └── application.properties
 ```
 ---
 
@@ -273,7 +272,7 @@ O arquivo `pom.xml` gerencia as dependências do ecossistema `Quarkus` necessár
 
 # Configurações Globais
 
- O arquivo `application.properties` fica Localizado em `src/main/resources/META-INF/application.properties`.
+ O arquivo `application.properties` fica Localizado em `src/main/resources/application.properties`.
  
  Este arquivo utiliza a especificação `MicroProfile Config` para gerenciar a aplicação. 
 
