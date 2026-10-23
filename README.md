@@ -155,8 +155,15 @@ Ele altera a porta padrão e injeta dinamicamente a variável `${DB_PATH}` decla
 # Altera a porta de execução padrão de 8080 para 8082:
 quarkus.http.port=8082
 
-# Injeta de forma nativa a variável de ambiente DB_PATH obtida do arquivo .env:
+# Configuração do banco de dados para utilizar o SQLite corporativo:
+quarkus.datasource.db-kind=sqlite
+
+# Injeta de forma dinâmica a variável de ambiente DB_PATH configurada no arquivo .env:
 quarkus.datasource.jdbc.url=jdbc:sqlite:${DB_PATH}
+
+# Configurações adicionais para otimização de pool de conexões do banco de dados:
+quarkus.datasource.jdbc.max-size=5
+quarkus.datasource.jdbc.min-size=1
 ```
 
 # Modelo de Domínio (Usuario.java)
