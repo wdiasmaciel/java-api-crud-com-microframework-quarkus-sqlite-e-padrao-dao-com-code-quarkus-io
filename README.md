@@ -300,7 +300,7 @@ quarkus.datasource.jdbc.min-size=1
 O modelo `Usuario.java` representa a entidade de negócio como um Plain Old Java Object (POJO), contendo os campos exigidos para cada usuário em:
 
 ```text
-src/main/java/com/empresa/model/Usuário.java
+src/main/java/com/empresa/model/Usuario.java
 ```
 
 ```java
@@ -353,6 +353,12 @@ public class Usuario {
 ---
 
 # Camada de Persistência (UsuarioDAO.java)
+
+Camada de persistência  em:
+
+```text
+src/main/java/com/empresa/dao/UsuarioDAO.java
+```
 
 Gerencia o ciclo de vida dos dados injetando a classe nativa do `pool` do `Agroal` (`AgroalDataSource`). 
 
