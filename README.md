@@ -224,9 +224,9 @@ Gerencia o ciclo de vida dos dados injetando a classe nativa do `pool` do `Agroa
 Além das operações CRUD tradicionais, foi incluído um iniciador dinâmico (`createTable()`) com a anotação `@Startup` para criar a tabela de banco automaticamente caso ela não exista no banco de dados `SQLite` mapeado no arquivo de ambiente `.env`.
 
 ```java
-package com.usuario.dao;
+package com.empresa.dao;
 
-import com.usuario.model.Usuario;
+import com.empresa.model.Usuario;
 import io.agroal.api.AgroalDataSource;
 import io.quarkus.runtime.Startup;
 import jakarta.enterprise.context.ApplicationScoped;
