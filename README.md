@@ -140,82 +140,14 @@ Instale as seguintes extensões no seu ambiente:
 O arquivo `pom.xml` gerencia as dependências do ecossistema `Quarkus` necessárias para expor endpoints `JSON` (`quarkus-rest-jackson`), fornecer o `pool` de conexões `JDBC` corporativo (`quarkus-agroal`) e conectar ao `SQLite` pela extensão `quarkus-jdbc-sqlite`, publicada pelo projeto Quarkiverse ([https://hub.quarkiverse.io/](https://hub.quarkiverse.io/)).
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    
-    <!-- Identificação do seu projeto com o pacote 'usuario' -->
-    <groupId>com.usuario</groupId>
-    <artifactId>quarkus-sqlite-dao</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
 
-    <properties>
-        <maven.compiler.release>21</maven.compiler.release>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- Versão estável do ecossistema Quarkus -->
-        <quarkus.platform.version>3.15.1</quarkus.platform.version>
-    </properties>
-
-    <!-- Gerenciador de Versões (BOM): Resolve o erro de versão ausente nas dependências abaixo -->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>io.quarkus.platform</groupId>
-                <artifactId>quarkus-bom</artifactId>
-                <version>${quarkus.platform.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
-    <dependencies>
-        <!-- Quarkus REST com suporte para mapeamento automático de JSON (Jackson) -->
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-rest-jackson</artifactId>
-        </dependency>
-
-        <!-- Extensão Quarkiverse para conectar ao SQLite via JDBC -->
-        <dependency>
-            <groupId>io.quarkiverse.jdbc</groupId>
-            <artifactId>quarkus-jdbc-sqlite</artifactId>
-            <version>3.0.11</version>
-        </dependency>
-
-        <!-- Agroal: Gerenciador e Pool de conexões padrão do Quarkus -->
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-agroal</artifactId>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <!-- Plugin oficial necessário para gerenciar o ciclo de vida do Quarkus e Dev Mode -->
-            <plugin>
-                <groupId>io.quarkus.platform</groupId>
-                <artifactId>quarkus-maven-plugin</artifactId>
-                <version>${quarkus.platform.version}</version>
-                <extensions>true</extensions>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>build</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-</project>
 ```
 
-# Configurações Globais (arquivo microprofile-config.properties)
+# Configurações Globais
 
-Localizado em `src/main/resources/META-INF/microprofile-config.properties`, este arquivo utiliza a especificação `MicroProfile Config` para gerenciar a aplicação. 
+ O arquivo `application.properties` fica Localizado em `src/main/resources/META-INF/application.properties`.
+ 
+ Este arquivo utiliza a especificação `MicroProfile Config` para gerenciar a aplicação. 
 
 Ele altera a porta padrão e injeta dinamicamente a variável `${DB_PATH}` declarada no arquivo de ambiente `.env`.
 
@@ -223,15 +155,8 @@ Ele altera a porta padrão e injeta dinamicamente a variável `${DB_PATH}` decla
 # Altera a porta de execução padrão de 8080 para 8082:
 quarkus.http.port=8082
 
-# Configuração do Data Source padrão via Agroal e Driver SQLite:
-quarkus.datasource.db-kind=sqlite
-
 # Injeta de forma nativa a variável de ambiente DB_PATH obtida do arquivo .env:
 quarkus.datasource.jdbc.url=jdbc:sqlite:${DB_PATH}
-
-# Configurações adicionais para otimização de pool de conexões:
-quarkus.datasource.jdbc.max-size=5
-quarkus.datasource.jdbc.min-size=1
 ```
 
 # Modelo de Domínio (Usuario.java)
