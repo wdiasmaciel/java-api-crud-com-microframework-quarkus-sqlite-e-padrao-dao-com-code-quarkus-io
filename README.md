@@ -137,7 +137,7 @@ Instale as seguintes extensões no seu ambiente:
 
 # Arquivo de Configuração de Dependências (pom.xml)
 
-O arquivo `pom.xml` gerencia as dependências do ecossistema `Quarkus` necessárias para expor endpoints `JSON` (`quarkus-rest-jackson`), fornecer o `pool` de conexões `JDBC` corporativo (`quarkus-agroal`) e conectar ao `SQLite` pela extensão `quarkus-jdbc-sqlite`, publicada pelo projeto Quarkiverse.
+O arquivo `pom.xml` gerencia as dependências do ecossistema `Quarkus` necessárias para expor endpoints `JSON` (`quarkus-rest-jackson`), fornecer o `pool` de conexões `JDBC` corporativo (`quarkus-agroal`) e conectar ao `SQLite` pela extensão `quarkus-jdbc-sqlite`, publicada pelo projeto Quarkiverse (https://hub.quarkiverse.io/).
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
