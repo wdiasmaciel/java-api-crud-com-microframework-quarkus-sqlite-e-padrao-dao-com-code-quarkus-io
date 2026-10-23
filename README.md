@@ -143,6 +143,8 @@ O arquivo `pom.xml` gerencia as dependências do ecossistema `Quarkus` necessár
 
 ```
 
+---
+
 # Configurações Globais
 
  O arquivo `application.properties` fica Localizado em `src/main/resources/META-INF/application.properties`.
