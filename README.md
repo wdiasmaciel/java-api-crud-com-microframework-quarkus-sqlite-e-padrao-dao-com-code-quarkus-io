@@ -127,7 +127,11 @@ Instale as seguintes extensões no seu ambiente:
 
 1. **REST Client** (para executar testes de API: arquivo de testes da API `testes.http`).
 
+![Extensão REST Client do VS Code](RESTClient.png "Extensão REST Client do VS Code")
+
 2. **SQLite Viewer** (para abrir e inspecionar visualmente as tabelas dentro do arquivo `.db` gerado).
+
+![Extensão SQLite Viewer do VS Code](SQLiteViewer.png "Extensão REST Client do VS Code")
 
 ---
 
