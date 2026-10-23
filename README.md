@@ -240,7 +240,7 @@ import java.util.List;
 public class UsuarioDAO {
 
     @Inject
-    AgroalDataSource dataSource; // Injeta o pool de conexões configurado no microprofile-config.properties.
+    AgroalDataSource dataSource; // Injeta o pool de conexões configurado no application.properties.
 
     @Startup // Executa este método automaticamente no momento em que a aplicação inicia.
     public void createTable() {
