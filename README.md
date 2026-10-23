@@ -105,11 +105,11 @@ https://quarkus.io/
    echo "DB_PATH=data/usuarios.db" > .env
    ```
 
-Conteúdo do arquivo `.env` na raiz do projeto:
-
-```properties
-DB_PATH=./data/usuario.db
-```
+   Conteúdo do arquivo `.env` na raiz do projeto:
+   
+   ```properties
+   DB_PATH=./data/usuario.db
+   ```
 
 4. Inicie o servidor em modo de desenvolvimento com o comando abaixo:
 
