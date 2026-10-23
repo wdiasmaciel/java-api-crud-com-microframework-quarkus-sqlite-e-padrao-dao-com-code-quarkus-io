@@ -171,27 +171,26 @@ quarkus.datasource.jdbc.min-size=1
 O modelo `Usuario.java` representa a entidade de negócio como um Plain Old Java Object (POJO), contendo os campos exigidos para cada usuário.
 
 ```java
-package com.usuario.model;
+package com.empresa.model;
 
 import java.time.LocalDate;
 
 public class Usuario {
     private Long id;
     private String nome;
-    private LocalDate nascimento; 
+    private LocalDate nacimiento; // Data de nascimento do usuário.
 
-    // Construtor padrão (obrigatório para serialização/deserialização do Jackson JSON)
+    // Construtor padrão (obrigatório para o Jackson converter JSON em Objeto)
     public Usuario() {
     }
 
-    // Construtor com todos os argumentos:
-    public Usuario(Long id, String nome, LocalDate nascimento) {
+    public Usuario(Long id, String nome, LocalDate nacimiento) {
         this.id = id;
         this.nome = nome;
-        this.nascimento = nascimento;
+        this.nacimiento = nacimiento;
     }
 
-    // Getters e Setters:
+    // Getters e Setters
     public Long getId() {
         return id;
     }
@@ -208,12 +207,12 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public LocalDate getNascimento() {
-        return nascimento;
+    public LocalDate getNacimiento() {
+        return nacimiento;
     }
 
-    public void setNascimento(LocalDate nascimento) {
-        this.nascimento = nascimento;
+    public void setNacimiento(LocalDate nacimiento) {
+        this.nacimiento = nacimiento;
     }
 }
 ```
