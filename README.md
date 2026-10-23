@@ -128,7 +128,7 @@ https://quarkus.io/
    * Clique no ícone do `globo terrestre` de `Abrir no navegador`, ou copie a URL publicada e cole na barra de navegação do navegador.
    * Adicione /hello à URL. Exemplo:
    
-   
+
    https://glowing-bassoon-97qp4q4479443p49q-8080.app.github.dev/q/dev-ui/welcome
 
 
@@ -325,6 +325,24 @@ quarkus.datasource.jdbc.url=jdbc:sqlite:${DB_PATH:./data/teste.db}
 quarkus.datasource.jdbc.max-size=5
 quarkus.datasource.jdbc.min-size=1
 ```
+**OBS**:
+Neste ponto, será necessário reiniciar o servidor. A aplicação já estava em execução antes da alteração da porta. O processo precisa recarregar o application.properties. É sempre bom verificar se há outro processo usando a porta. Então, pare o servidor atual (`CTRL + c` no terminal) e reinicie:
+
+   ```bash
+   mvn quarkus:dev
+   ```
+
+   ou 
+
+   ```bash
+   mvn -Dquarkus.analytics.disabled=true quarkus:dev
+   ```
+
+   ou
+   
+   ```bash
+   ./mvnw quarkus:dev -Dquarkus.test.continuous-testing=disabled
+   ```
 
 ---
 
