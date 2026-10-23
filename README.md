@@ -122,7 +122,7 @@ https://quarkus.io/
 ---
 
 ## Extensões Necessárias no VS Code do Codespaces
-Antes de iniciar, certifique-se de instalar as seguintes extensões no seu ambiente:
+Instale as seguintes extensões no seu ambiente:
 
 1. **REST Client** (para executar testes de API: arquivo de testes da API `testes.http`).
 
