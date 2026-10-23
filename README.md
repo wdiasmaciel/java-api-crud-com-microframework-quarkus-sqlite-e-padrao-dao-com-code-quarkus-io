@@ -168,6 +168,8 @@ quarkus.datasource.jdbc.max-size=5
 quarkus.datasource.jdbc.min-size=1
 ```
 
+---
+
 # Modelo de Domínio (Usuario.java)
 
 O modelo `Usuario.java` representa a entidade de negócio como um Plain Old Java Object (POJO), contendo os campos exigidos para cada usuário.
