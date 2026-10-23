@@ -82,7 +82,12 @@ https://quarkus.io/
    ```text
    JDBC Driver - SQLite
    ```
-
+   
+   * `Agroal` para JDBC Datasources and connection pooling:
+   ```text
+   Agroal
+   ```
+   
 4. No canto superior direito, clique no botão **Generate your application**.
 
 5. No menu flutuante que abrir, selecione a opção **Push to GitHub** (isso vinculará sua conta e criará automaticamente um novo repositório para o projeto diretamente no seu perfil do GitHub).
@@ -122,7 +127,7 @@ https://quarkus.io/
    ```bash
    mvn -Dquarkus.analytics.disabled=true quarkus:dev
    ```
-   
+
 **OBS**:
    *O servidor iniciará automaticamente na porta **8080**. A porta será configurada posteriormente no arquivo `application.properties`.*
 
