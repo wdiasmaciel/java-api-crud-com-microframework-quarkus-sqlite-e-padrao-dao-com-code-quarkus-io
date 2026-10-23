@@ -34,6 +34,7 @@ Criar uma `API REST` com suporte a operações CRUD (CREATE, READ, UPDATE, DELET
 |    └── usuario.db
 ├── pom.xml
 ├── README.md
+├── Quarkus.png
 ├── RESTClient.png
 ├── SQLiteViewer.png
 ├── testes.http
