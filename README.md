@@ -377,10 +377,10 @@ Em resumo: o `CDI` permite que anotações como `@Inject` e `@ApplicationScoped`
 Expõe os `endpoints` HTTP, utilizando a especificação `JAX-RS` com retornos estruturados via classe `Response`.
 
 ```java
-package com.usuario.controller;
+package com.empresa.resource;
 
-import com.usuario.dao.UsuarioDAO;
-import com.usuario.model.Usuario;
+import com.empresa.dao.UsuarioDAO;
+import com.empresa.model.Usuario;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
