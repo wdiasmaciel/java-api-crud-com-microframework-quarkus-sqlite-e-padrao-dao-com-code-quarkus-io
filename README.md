@@ -56,8 +56,14 @@ Criar uma `API REST` com suporte a operações CRUD (CREATE, READ, UPDATE, DELET
 
 ## Gerando o Projeto no Code.Quarkus.io
 
-https://code.quarkus.io/
+https://quarkus.io/
 
+Quarkus.png
+![Quarkus](Quarkus.png)
+
+---
+
+## Gerando o Projeto no Code.Quarkus.io
 
 1. Acesse o site [https://code.quarkus.io/](https://code.quarkus.io/).
 
