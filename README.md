@@ -354,7 +354,7 @@ public class Usuario {
 
 # Camada de Persistência (UsuarioDAO.java)
 
-Camada de persistência  em:
+Camada de persistência em:
 
 ```text
 src/main/java/com/empresa/dao/UsuarioDAO.java
@@ -516,6 +516,12 @@ Em resumo: o `CDI` permite que anotações como `@Inject` e `@ApplicationScoped`
 ---
 
 # Camada de Controlador REST (UsuarioResource.java)
+
+Controlador em:
+
+```text
+src/main/java/com/empresa/resource/UsuarioResource.java
+```
 
 Expõe os `endpoints` HTTP, utilizando a especificação `JAX-RS` com retornos estruturados via classe `Response`.
 
