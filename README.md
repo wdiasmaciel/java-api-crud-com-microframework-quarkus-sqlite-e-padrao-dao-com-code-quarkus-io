@@ -87,7 +87,7 @@ https://quarkus.io/
    ```text
    Agroal
    ```
-   
+
 4. No canto superior direito, clique no botão **Generate your application**.
 
 5. No menu flutuante que abrir, selecione a opção **Push to GitHub** (isso vinculará sua conta e criará automaticamente um novo repositório para o projeto diretamente no seu perfil do GitHub).
@@ -713,6 +713,16 @@ curl -X PUT http://localhost:8082/usuarios/1 \
 ```bash
 curl -X DELETE http://localhost:8082/usuarios/1
 ```
+
+---
+
+## Link
+
+https://www.youtube.com/watch?v=vwsfBKJenvw
+
+https://www.youtube.com/watch?v=6lHxh5EPEuU&t=1s
+
+---
 
 # Exercícios
 
