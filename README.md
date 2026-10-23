@@ -85,7 +85,7 @@ https://quarkus.io/
    
    * `Agroal` para JDBC Datasources and connection pooling:
    ```text
-   Agroal
+   Agroal - DB connection pool
    ```
 
 4. No canto superior direito, clique no botão **Generate your application**.
