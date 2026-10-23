@@ -354,7 +354,7 @@ Ele resolve dois problemas centrais:
 
 Em vez de você instanciar manualmente as classes usando o operador `new` (o que acopla o código), o framework cria e gerencia os objetos para você.
 
-• No Spring: você usa `@Autowired` ou injeção via método Construtor.
+• No Spring: você usa `@Autowired` ou injeção via método construtor.
 
 • No CDI (Quarkus): você usa a anotação `@Inject` (que pertence ao padrão oficial do Java, `jakarta.inject.Inject`).
 
