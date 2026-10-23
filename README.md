@@ -364,7 +364,7 @@ O `CDI` define por quanto tempo um objeto deve "viver" na memória do servidor.
 
 Os escopos mais comuns que substituem as anotações do Spring são:
 
-• `@ApplicationScoped`: o componente tem uma única instância para toda a aplicação (equivalente ao `@Component` ou `@Service` padrão do Spring, que são o padrão de projeto `GoF` `Singletons`). É o que foi usado no `UsuarioDAO`.
+• `@ApplicationScoped`: o componente tem uma única instância para toda a aplicação (equivalente ao `@Component` ou `@Service` padrão do Spring, que são o padrão de projeto `GoF` `Singleton`). É o que foi usado no `UsuarioDAO`.
 
 • `@RequestScoped`: uma nova instância do componente é criada a cada requisição HTTP e destruída logo após a resposta ser enviada (equivalente ao `@Scope("request")` do Spring).
 
