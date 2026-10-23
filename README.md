@@ -107,7 +107,7 @@ https://quarkus.io/
    ```
 
    ```bash
-   echo "DB_PATH=data/usuarios.db" > .env
+   echo "DB_PATH=./data/usuarios.db" > .env
    ```
 
    Conteúdo do arquivo `.env` na raiz do projeto:
