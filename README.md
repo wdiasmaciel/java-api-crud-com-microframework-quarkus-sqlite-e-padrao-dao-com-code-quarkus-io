@@ -95,7 +95,7 @@ https://quarkus.io/
 
 2. Clique no botão verde **Code**, mude para a aba **Codespaces** e selecione **Create codespace on main**.
 
-3. Assim que o terminal carregar, crie a pasta do banco de dados e configure o arquivo de ambiente `.env` executando:
+3. Assim que o terminal carregar, crie a pasta para o arquivo do banco de dados `SQLite` e configure o arquivo de ambiente `.env` executando:
 
    ```bash
    mkdir -p data
@@ -105,6 +105,12 @@ https://quarkus.io/
    echo "DB_PATH=data/usuarios.db" > .env
    ```
 
+Conteúdo do arquivo `.env` na raiz do projeto:
+
+```properties
+DB_PATH=./data/usuario.db
+```
+
 4. Inicie o servidor em modo de desenvolvimento com o comando abaixo:
 
    ```bash
@@ -112,20 +118,6 @@ https://quarkus.io/
    ```
 **OBS**:
    *O servidor iniciará automaticamente na porta **8080**. A porta será configurada posteriormente no arquivo `application.properties`.*
-
----
-
-## Variável de Ambiente
-
-O `Quarkus` lê variáveis de ambiente diretamente de um arquivo `.env` localizado na raiz do projeto. 
-
-Crie o arquivo `.env` com o conteúdo abaixo na raiz do projeto:
-
-```properties
-DB_PATH=./data/usuario.db
-```
-
-Crie a pasta `data`, para armazenar o arquivo do banco de dados `SQLite`.
 
 ---
 
