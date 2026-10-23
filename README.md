@@ -221,6 +221,8 @@ public class Usuario {
 }
 ```
 
+---
+
 # Camada de Persistência (UsuarioDAO.java)
 
 Gerencia o ciclo de vida dos dados injetando a classe nativa do `pool` do `Agroal` (`AgroalDataSource`). 
