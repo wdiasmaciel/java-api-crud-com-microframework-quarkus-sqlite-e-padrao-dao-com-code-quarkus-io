@@ -100,6 +100,33 @@ https://quarkus.io/
 
 2. Clique no botão verde **Code**, mude para a aba **Codespaces** e selecione **Create codespace on main**.
 
+3. Inicie o servidor em modo de desenvolvimento com o comando abaixo:
+
+   ```bash
+   mvn quarkus:dev
+   ```
+
+   ou 
+
+   ```bash
+   mvn -Dquarkus.analytics.disabled=true quarkus:dev
+   ```
+
+   ou
+   
+   ```bash
+   ./mvnw quarkus:dev -Dquarkus.test.continuous-testing=disabled
+   ```
+
+   **OBS**:
+   *O servidor iniciará automaticamente na porta **8080**. A porta será configurada posteriormente no arquivo `application.properties`.* Entretanto, no ambiente do `Codespaces` do `GitHub`, será usada outra porta, como a `5005`. Então, no `VS Code` do `Codespaces` do `GitHub`:
+
+   * Clique na aba `Portas` no painel inferior (painel do terminal).
+   * Clique no botão `Adicionar Porta`.
+   * Adicione a porta 8080. Mais a frente, será necessário adicionar a porta `8082` também.
+   * Clique no ícone do `globo terrestre` de `Abrir no navegador`, ou copie a URL publicada e cole na barra de navegação do navegador.
+   * Adicione /hello à URL.
+
 3. Assim que o terminal carregar, crie a pasta para o arquivo do banco de dados `SQLite` e configure o arquivo de ambiente `.env` executando:
 
    ```bash
@@ -115,21 +142,6 @@ https://quarkus.io/
    ```properties
    DB_PATH=./data/usuario.db
    ```
-
-4. Inicie o servidor em modo de desenvolvimento com o comando abaixo:
-
-   ```bash
-   mvn quarkus:dev
-   ```
-
-   ou 
-
-   ```bash
-   mvn -Dquarkus.analytics.disabled=true quarkus:dev
-   ```
-
-**OBS**:
-   *O servidor iniciará automaticamente na porta **8080**. A porta será configurada posteriormente no arquivo `application.properties`.*
 
 ---
 
