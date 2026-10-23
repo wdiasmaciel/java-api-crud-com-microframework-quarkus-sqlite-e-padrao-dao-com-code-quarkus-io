@@ -58,7 +58,6 @@ Criar uma `API REST` com suporte a operações CRUD (CREATE, READ, UPDATE, DELET
 
 https://quarkus.io/
 
-Quarkus.png
 ![Quarkus](Quarkus.png)
 
 ---
