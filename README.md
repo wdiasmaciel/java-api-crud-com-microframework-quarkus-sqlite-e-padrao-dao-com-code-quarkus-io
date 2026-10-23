@@ -124,7 +124,7 @@ https://quarkus.io/
    * Clique na aba `Portas` no painel inferior (painel do terminal).
    * Clique no botão `Adicionar Porta`.
    * Adicione a porta 8080. Mais a frente, será necessário adicionar a porta `8082` também. 
-   * Caso seja necessário, altere a visibilidade das portas, tornando-as portas públicas. Para isso, clique como o botão direito do mouse sobre `visibilidade`.
+   * Caso seja necessário, altere a visibilidade das portas, tornando-as portas públicas. Para isso, clique como o botão direito do mouse sobre a coluna `visibilidade`.
    * Clique no ícone do `globo terrestre` de `Abrir no navegador`, ou copie a URL publicada e cole na barra de navegação do navegador.
    * Adicione /hello à URL.
 
