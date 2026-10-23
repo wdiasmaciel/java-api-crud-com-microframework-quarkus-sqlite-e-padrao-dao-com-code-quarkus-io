@@ -372,7 +372,7 @@ Os escopos mais comuns que substituem as anotações do Spring são:
 
 Em resumo: o `CDI` permite que anotações como `@Inject` e `@ApplicationScoped` funcionem no `Quarkus` sem que você precise carregar bibliotecas do Spring Boot.
 
-# Camada de Controlador REST (UsuarioResourceController.java)
+# Camada de Controlador REST (UsuarioResource.java)
 
 Expõe os `endpoints` HTTP, utilizando a especificação `JAX-RS` com retornos estruturados via classe `Response`.
 
