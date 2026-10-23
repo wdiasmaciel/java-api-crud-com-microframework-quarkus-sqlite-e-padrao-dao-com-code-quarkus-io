@@ -126,7 +126,15 @@ https://quarkus.io/
    * Adicione a porta 8080. Mais a frente, será necessário adicionar a porta `8082` também. 
    * Caso seja necessário, altere a visibilidade das portas, tornando-as portas públicas. Para isso, clique como o botão direito do mouse sobre a coluna `visibilidade`.
    * Clique no ícone do `globo terrestre` de `Abrir no navegador`, ou copie a URL publicada e cole na barra de navegação do navegador.
-   * Adicione /hello à URL.
+   * Adicione /hello à URL. Exemplo:
+   
+   
+   https://glowing-bassoon-97qp4q4479443p49q-8080.app.github.dev/q/dev-ui/welcome
+
+
+   https://glowing-bassoon-97qp4q4479443p49q-8080.app.github.dev/hello
+
+
 
 3. Assim que o terminal carregar, crie a pasta para o arquivo do banco de dados `SQLite` e configure o arquivo de ambiente `.env` executando:
 
