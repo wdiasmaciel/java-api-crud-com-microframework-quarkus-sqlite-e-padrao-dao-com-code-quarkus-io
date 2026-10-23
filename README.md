@@ -390,7 +390,7 @@ import java.util.List;
 @Path("/usuarios") // Rota base da API.
 @Produces(MediaType.APPLICATION_JSON) // As respostas do controlador serão estruturadas em JSON.
 @Consumes(MediaType.APPLICATION_JSON) // As entradas recebidas devem obrigatoriamente ser JSON.
-public class UsuarioResourceController {
+public class UsuarioResource {
 
     @Inject
     UsuarioDAO usuarioDAO; // Injeta a lógica de persistência de dados (DAO).
