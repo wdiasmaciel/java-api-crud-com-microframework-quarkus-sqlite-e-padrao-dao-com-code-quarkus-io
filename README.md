@@ -116,6 +116,13 @@ https://quarkus.io/
    ```bash
    mvn quarkus:dev
    ```
+
+   ou 
+
+   ```bash
+   mvn -Dquarkus.analytics.disabled=true quarkus:dev
+   ```
+   
 **OBS**:
    *O servidor iniciará automaticamente na porta **8080**. A porta será configurada posteriormente no arquivo `application.properties`.*
 
