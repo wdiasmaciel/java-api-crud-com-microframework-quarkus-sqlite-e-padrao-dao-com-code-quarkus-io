@@ -451,7 +451,7 @@ public class UsuarioResource {
 ```
 ---
 
-# Extensão REST Client do VS Code
+# Teste com a Extensão REST Client
 
 1. Criar um arquivo chamado `testes.http` na raiz do projeto.
 
@@ -522,32 +522,15 @@ Accept: {{contentType}}
 
 4. Para verificar os dados salvos no banco de dados, clique com o botão direito sobre o arquivo criado em `data/usuarios.db` e selecione **Open with SQLite Viewer**.
 
-# Executar no GitHub Codespaces
-
-O ambiente do `GitHub Codespaces` já oferece suporte nativo ao ecossistema Java (JDK) e ferramentas de build como o Apache Maven. 
-
-Siga o roteiro de comandos abaixo diretamente no terminal integrado:
-
-### Iniciar o servidor em Modo de Desenvolvimento (Dev Mode)
-
-O `Quarkus` se destaca pela funcionalidade de *Live Coding*.
-
-Execute o comando abaixo na raiz do projeto. A propriedade desabilita o build analytics do Quarkus para este comando; ela é uma opção do Maven, não uma configuração de runtime do `microprofile-config.properties`:
-
-```bash
-mvn -Dquarkus.analytics.disabled=true quarkus:dev
-```
-*A infraestrutura do `Quarkus` detectará o arquivo `.env`, mapeará a string de conexão para a propriedade do MicroProfile Config e inicializará o servidor HTTP embutido na porta **8082**.*
-
-O comando pressupõe que a porta `8082` esteja livre. Se outra instância já estiver usando essa porta, encerre-a antes de iniciar o servidor.
-
 ---
 
-## Testando a API (CRUD)
+## Teste com curl
 
 Abra uma aba de terminal secundária no `GitHub Codespaces` para realizar chamadas REST de teste via utilitário `curl`:
 
-Os exemplos abaixo usam os IDs `1` e `2` e pressupõem um banco novo. Ao repetir os testes, use os IDs retornados pelas requisições `POST` ou pare o servidor e remova `data/usuarios.db` para recriar o banco. A remoção apaga todos os registros desse banco.
+Os exemplos abaixo usam os IDs `1` e `2` e pressupõem um banco novo. 
+
+Ao repetir os testes, use os IDs retornados pelas requisições `POST` ou pare o servidor e remova `data/usuarios.db` para recriar o banco. A remoção apaga todos os registros desse banco.
 
 ### Cadastrar um Usuário (CREATE)
 ```bash
@@ -586,12 +569,12 @@ Empregando a linguagem de programação Java, o microframework Quarkus, o banco 
 O sistema deve permitir:
 1. O CRUD de clientes e de produtos.
 2. Listar todos os produtos adquiridos por um certo cliente, cujo `id` é informado como parâmetro.
-3. Listar as categorias de produto adquiridas por mais de `n` clientes, em que `n` é um número informado como parâmetro.
+3. Listar as categorias de produto adquiridas por mais de `n` clientes, em que `n` é um número informado como parâmetro na API.
 
 ### 2) Agência de Viagens
 O sistema deve permitir:
 1. O CRUD de clientes e destinos turísticos.
-2. Listar todos os destinos turísticos visitados por um certo cliente, cujo `id` é informado como parâmetro.
-3. Listar todos os clientes que visitaram um certo destino turístico, cujo `id` é informado como parâmetro.
+2. Listar todos os destinos turísticos visitados por um certo cliente, cujo `id` é informado como parâmetro na API.
+3. Listar todos os clientes que visitaram um certo destino turístico, cujo `id` é informado como parâmetro na API.
 4. Listar os destinos turísticos agrupados e ordenados por país.
-5. Listar todos os países com mais de `n` destinos turísticos, em que `n` é um número informado como parâmetro.
+5. Listar todos os países com mais de `n` destinos turísticos, em que `n` é um número informado como parâmetro na API.
